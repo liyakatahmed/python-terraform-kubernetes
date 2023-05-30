@@ -32,7 +32,7 @@ resource "kubernetes_deployment" "app_deployment" {
 
       spec {
         container {
-          image = "liyakatahmed/python-webapp:latest"
+          image = "liyakatahmed/python-terraform-kubernetes:latest"
           name  = "python-webapp"
 
           port {
