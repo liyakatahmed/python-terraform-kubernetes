@@ -1,0 +1,1 @@
+This is a simple HTTP server written in Python, imaged build with Dockerfile and  deployed on Kubernetes using Terraform.
