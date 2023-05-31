@@ -1,1 +1,1 @@
-This is a simple HTTP server written in Python, image build with Dockerfile and  deployed on Kubernetes using Terraform.
+This is a simple website served by a Python HTTP server. Uses Docker image build on Ubuntu and deployed on Kubernetes using Terraform.

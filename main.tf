@@ -4,13 +4,13 @@ provider "kubernetes" {
 
 resource "kubernetes_namespace" "app_namespace" {
   metadata {
-    name = "my-app-namespace"
+    name = "python-webapp-namespace"
   }
 }
 
 resource "kubernetes_deployment" "app_deployment" {
   metadata {
-    name      = "my-app-deployment"
+    name      = "python-webapp-deployment"
     namespace = kubernetes_namespace.app_namespace.metadata.0.name
   }
 
@@ -46,7 +46,7 @@ resource "kubernetes_deployment" "app_deployment" {
 
 resource "kubernetes_service" "app_service" {
   metadata {
-    name      = "my-app-service"
+    name      = "python-webapp-service"
     namespace = kubernetes_namespace.app_namespace.metadata.0.name
   }
 
