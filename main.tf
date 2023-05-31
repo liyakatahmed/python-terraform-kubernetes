@@ -1,5 +1,6 @@
 provider "kubernetes" {
-  config_path = "~/.kube/config"
+  config_path = "~/../../cygwin64/home/Liyakat/.kube/config" 
+  # Default config_path = "~/.kube/config" but somehow during minikube installation ".kube" folder got placed in the above config_path.
 }
 
 resource "kubernetes_namespace" "app_namespace" {
